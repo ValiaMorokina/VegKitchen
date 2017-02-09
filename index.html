@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <title>Vegetarian Kitchen</title>
+			 <!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!-- custom css -->
+			<link rel="stylesheet" type="text/css" href="css/style.css"> 
+			<!-- FONTS-->
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+			<!-- FontAwesome -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<!--Jumbotron-->
+	<div class="jumbotron text-center">
+	  <h1>Vegetarian Kitchen</h1>
+	  <p>Healthy living with organic vegetarian foods</p>
+	  <p>Sign up for our newsletter </p>
+		<form class="form-inline">
+				<div class="input-group">
+				  <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+				  <div class="input-group-btn">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SubscribeModal">Subscribe</button>
+				  </div>
+				</div>
+		</form>
+	</div>
+	<!-- SubscribeModal -->
+		  <div class="modal fade" id="SubscribeModal" role="dialog">
+			<div class="modal-dialog modal-sm">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Subscription Confirmed</h4>
+				</div>
+				<div class="modal-body">
+				  <p>Thank You for subscribing to our newsletter</p>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+<!-- Navbar at the top of the page that collapses on smaller screens: -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="MyNavbar">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span> 
+		  </button>
+		  <a class="navbar-brand" href="#myPage">Logo</a>
+		</div>	
+		<div class="collapse navbar-collapse" id="myNavbar">
+		<!-- -->
+			<form class="navbar-form navbar-left">
+			  <div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			  </div>
+			  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		<!--Navbar-right -->
+		  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#service">SERVICES</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">MENU
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					  <li><a href="menu.html">Breakfast</a></li>
+					  <li><a href="#">Lunch</a></li>
+					  <li><a href="#">Dinner</a></li>
+					</ul>
+				</li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#specialOffer">SPECIAL OFFER</a></li>
+				<li><a href="#contact">CONTACT</a></li>	
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>			
+		  </ul>
+		</div>
+	  </div>
+	</nav> <!--/nav -->
+
+	<!--About Company --> 
+	<div class="container-fluid" id="AboutCompany">
+	  <div class="row">
+		<div class="col-sm-6" id="about">
+		  <h2>Vegetarian Kitchen</h2> 
+		  <h4>Suppliers and Consultants to the Catering Industry for over 25 years</h4>
+		  <p>Founded in 1987, we are now the UK’s premier specialist distributor of vegetarian and vegan products within the foodservice sector. Our expertise of specialist vegetarian and vegan products enables us to offer expert advice on nutrition, menu planning and not least how to maximise profit potential whilst exceeding your client’s demands for exciting, innovative and healthy menus.</p>
+		  <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" >Get in Touch</button>
+		  <br><br>
+		  <!--Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Write us a message</h4>
+				  </div>
+				  <div class="modal-body">
+				    <form>
+						<div class="form-group">
+						  <label for="usr">Your Name:</label>
+						  <input type="text" class="form-control" id="usr">
+						</div>
+						<div class="form-group">
+						  <label for="CustEmail">Your Email:</label>
+						  <input type="text" class="form-control" id="CustEmail">
+						</div>
+						<div class="form-group">
+						  <label for="comment">Message:</label>
+						  <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+				   </form>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Send</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  <!-- glyphAnimated -->
+		</div>
+		<div class="col-sm-1" >
+		  <br> <br>
+		  <span class="glyphicon  glyphicon-leaf logo" id="glyphAnimated"> </span>  
+		</div>
+		<div class="col-sm-5" id="values">
+		  <h2>Our Values</h2>
+		  <h4><strong>MISSION:</strong> Our mission – To inspire people to choose a healthier, greener, more compassionate lifestyle through plant-based eating.</h4>
+		  <p><strong>VISION:</strong> Our vision – We envision a world where people think critically about their food choices, where growing numbers of businesses, community groups, and organizations inspire people to make healthier, greener, more compassionate choices, and where nutritious, sustainable plant-based foods are accessible to all.</p>
+		</div>
+	  </div> <!-- ./row -->
+	</div> <!-- #/about -->
+            <!-- Service Start  -->
+        <section id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block-top">
+                            <div class="service-header">
+                                <h1>Heading Feature title goes here</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. <br /> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div><!-- .col-md-12 close -->
+                </div><!-- row close -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="block-bottom">
+							<div class="service-tab">
+								  <!-- Nav tabs -->
+								  <ul class="badhon-tab" role="tablist">
+									<li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+									<i class="fa fa-heart-o"></i>
+									Heading title 1
+									</a></li>
+									<li><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+									<i class="fa fa-briefcase"></i>
+									Heading title 2
+									</a></li>
+									<li><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+									<i class="fa fa-leaf"></i>
+									Heading title 3
+									</a></li>
+									<li><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+									<i class="fa fa-briefcase"></i>
+									Heading title 4
+									</a></li>
+									<li><a href="#umbrella" aria-controls="settings" role="tab" data-toggle="tab">
+									<i class="fa fa-umbrella"></i>
+									Heading title 5
+									</a></li>
+								  </ul>
+
+								  <!-- Tab panes -->
+								  <div class="tab-content edit-tab-content">
+									<div class="tab-pane active edit-tab" id="home">
+										<div class="teb-icon-edit">
+											<i class="fa fa-heart-o"></i>
+										</div>
+										<h1>Heading Feature title goes here 1</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit.
+										</p>
+									</div>
+									<div class="tab-pane edit-tab" id="profile">
+										<div class="teb-icon-edit">
+											<i class="fa fa-briefcase"></i>
+										</div>
+										<h1>Heading Feature title goes here 2</h1>
+										<p>Nunc accumsan hendrerit nunc, ac venenatis magna facilisis quis. Ut sit amet mi ac <br /> neque sodales facilisis. Nullam tempus fermentum lorem nec interdum. Ut id <br /> orci id sapien imperdiet vehicula. Etiam quis dignissim ante. Donec convallis tincidunt <br /> ligula, ac luctus mi interdum a.</p>
+									</div>
+									<div class="tab-pane edit-tab" id="messages">
+										<div class="teb-icon-edit">
+											<i class="fa fa-leaf"></i>
+										</div>
+										<h1>Heading Feature title goes here 3</h1>
+										<p>Nunc accumsan hendrerit nunc, ac venenatis magna facilisis quis. Ut sit amet mi ac <br /> neque sodales facilisis. Nullam tempus fermentum lorem nec interdum. Ut id <br /> orci id sapien imperdiet vehicula. Etiam quis dignissim ante. Donec convallis tincidunt <br /> ligula, ac luctus mi interdum a.</p>
+									</div>
+									<div class="tab-pane edit-tab" id="settings">
+										<div class="teb-icon-edit">
+											<i class="fa fa-briefcase"></i>
+										</div>
+										<h1>Heading Feature title goes here 4</h1>
+										<p>Nunc accumsan hendrerit nunc, ac venenatis magna facilisis quis. Ut sit amet mi ac <br /> neque sodales facilisis. Nullam tempus fermentum lorem nec interdum. Ut id <br /> orci id sapien imperdiet vehicula. Etiam quis dignissim ante. Donec convallis tincidunt <br /> ligula, ac luctus mi interdum a.</p>
+									</div>
+									<div class="tab-pane edit-tab" id="umbrella">
+										<div class="teb-icon-edit">
+											<i class="fa fa-umbrella"></i>
+										</div>
+										<h1>Heading Feature title goes here 5</h1>
+										<p>Nunc accumsan hendrerit nunc, ac venenatis magna facilisis quis. Ut sit amet mi ac <br /> neque sodales facilisis. Nullam tempus fermentum lorem nec interdum. Ut id <br /> orci id sapien imperdiet vehicula. Etiam quis dignissim ante. Donec convallis tincidunt <br /> ligula, ac luctus mi interdum a.</p>
+									</div>
+								  </div>
+							</div>
+						</div>
+					</div><!-- .col-md-12 close -->
+				</div><!-- row close -->
+            </div><!-- .container close -->
+        </section><!-- #service close -->
+
+	<!--Portfolio -->
+	<div id="portfolio" class="container-fluid text-center bg-grey">
+	  <h2>Portfolio</h2>
+	  <h4>Lorem ipsum dolor</h4>
+		  <div class="row text-center">
+				<div class="col-sm-4">
+				  <div class="thumbnail">
+					<img src="images/soup.jpg" alt="Soup">
+					<p><strong>Pumpkin Soup</strong></p>
+					<p>We make delicious soups</p>
+				  </div>
+				</div>
+				<div class="col-sm-4">
+				  <div class="thumbnail">
+					<img src="images/salad.jpg" alt="Salad">
+					<p><strong>Green Salad</strong></p>
+					<p>Awesome Green Salads</p>
+				  </div>
+				</div>
+				<div class="col-sm-4">
+				  <div class="thumbnail">
+					<img src="images/cake.jpg" alt="Cake">
+					<p><strong>Raw Vegan Desserts</strong></p>
+					<p>Fabulous Cheesecakes</p>
+				  </div>
+				</div>
+			</div>
+	</div>
+	<!-- badges -->
+	<div class="container" id="badges">
+		<h2>Lorem ipsum dolor</h2>
+		<ul class="list-group">
+			  <li class="list-group-item">Item 1 <span class="badge">12</span></li>
+			  <li class="list-group-item">Item 2 <span class="badge">5</span></li>
+			  <li class="list-group-item">Item 3 <span class="badge">3</span></li>
+		</ul>
+	</div> <!-- #/badges -->
+
+	<!--Carousel with customer feedback -->
+	<div class="container-fluid" id="customerFeedBack">
+		<h2 class="text-center">Lorem ipsum dolor sit amet</h2>
+		<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+				<div class="item active">
+				<h4>"This food is the best. I am so happy I can eat healthy and tasty food here"<br><span>Julia Roberts, Actress</span>
+				</h4>
+				</div>
+				<div class="item">
+				  <h4>"One word... WOW!!"<br><span>Sam Frank, Musician</span></h4>
+				</div>
+				<div class="item">
+				  <h4>"This food makes me happy "<br><span>Jason Lee, Actor</span></h4>
+				</div>
+			  </div>
+
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+		</div>
+	</div>
+
+	<!--specialOffer -->
+	<div id="specialOffer" class="container-fluid">
+	  <div class="text-center">
+	    <h2>Special Offer</h2>
+	    <h4>Everyday we offer a 'Chef's special' at great discount</h4>
+	  </div>
+	  <div class="row">
+	    <div class="col-sm-6">
+	      <div class="panel panel-info text-center">
+	        <div class="panel-heading">
+	          <h1>Breakfast</h1>
+	        </div>
+	        <div class="panel-body">
+	          <p><strong>Juice</strong> orange/apple</p>
+	          <p><strong>Porridge</strong> oatmeal/cereal/vegetable squash</p>
+	          <p><strong>Fruit</strong> banana/orange/apple</p>
+	          <p><strong>Pancakes</strong> with raspberry jam</p>
+	          <p><strong>Drink</strong> tea/coffee</p>
+	        </div>
+	        <div class="panel-footer">
+	          <h3>$7</h3>
+	          <h4>including 5% discount </h4>
+	          <button id="orderNow" class="btn btn-lg">Order Now</button>
+	        </div>
+	      </div> 
+	    </div> 
+	    <div class="col-sm-6">
+	      <div class="panel panel-info text-center">
+	        <div class="panel-heading">
+	          <h1>Dinner</h1>
+	        </div>
+	        <div class="panel-body">
+	          <p><strong>Salad</strong> green/white</p>
+	          <p><strong>Soup</strong> vegetable</p>
+	          <p><strong>Potato</strong> mash/grilled</p>
+	          <p><strong>Cake</strong> chocolate</p>
+	          <p><strong>Drink</strong> tea/coffee</p>
+	        </div>
+	        <div class="panel-footer">
+	          <h3>$12</h3>
+	          <h4>including 15% discount</h4>
+	          <button id="orderNow2" class="btn btn-lg">Order Now</button>
+	        </div>
+	      </div> 
+	    </div> 
+	  </div>
+	</div> <!-- #/specialOffer-->
+	
+<!-- Table  -->
+<div class="container" id="tableSection">
+  <h2 class="text-center">Lorem ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  </p>            
+  <table class="table text-center" id="tableOne">
+    <thead>
+      <tr>
+        <th>Column1</th>
+        <th>Column2</th>
+        <th>Column3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>some text</td>
+        <td>some text</td>
+        <td>some text</td>
+      </tr>
+      <tr>
+        <td>some text</td>
+        <td>some text</td>
+        <td>some text</td>
+      </tr>
+      <tr>
+        <td>some text</td>
+        <td>some text</td>
+        <td>some text</td>
+      </tr>
+    </tbody>
+  </table>
+</div> <!-- #/tableSection -->
+
+<!-- CONTACT -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us:
+      </p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> City, Country</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +12345667890</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> vegfood@gmail.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+	<div class="container-fluid text-center">
+		<br><br>
+		<div id="time">
+			<!--time will be shown here from script code -->
+		</div> <!-- #/time -->
+	</div>
+</footer>
+
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<!-- Latest compiled JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<!-- custom script -->
+			<script src="js/script.js"></script>
+</body>
+</html>
